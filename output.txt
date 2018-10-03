@@ -1,0 +1,13 @@
+Now printing top viewed articles...
+('Candidate is jerk, alleges rival', 338647)
+('Bears love berries, alleges bear', 253801)
+('Bad things gone, say good people', 170098)
+
+Now printing the most popular article authors...
+('Ursula La Multa', 507594)
+('Rudolf von Treppenwitz', 423457)
+('Anonymous Contributor', 170098)
+('Markoff Chaney', 84557)
+
+Now printing dates in which more than 1% of requests resulted in errors...
+(datetime.date(2016, 7, 17), 0.0226268624680273)
