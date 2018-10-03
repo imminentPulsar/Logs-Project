@@ -58,8 +58,8 @@ class MyClass(object):
                        cast(z.total as float) > 0.01""")
         results = cursor.fetchall()
         conn.close()
-        print("""Now printing dates where more than
-                 1% of requests resulted with errors...""")
+        print("Now printing dates where more than" +
+              " 1% of requests resulted with errors...")
         for time, error_percent in results:
             print("{} -- {} % Error".format(time, error_percent))
         print("")
