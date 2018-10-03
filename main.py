@@ -20,7 +20,7 @@ class MyClass(object):
                        by count DESC""")
         results = cursor.fetchall()
         conn.close()
-        print("Now printing top viewed articles...")
+        print("1. What are the most popular three articles of all time?")
         for title, count in results:
             print("{} -- {} Views".format(title, count))
         print("")
@@ -39,7 +39,7 @@ class MyClass(object):
                        order by views DESC""")
         results = cursor.fetchall()
         conn.close()
-        print("Now printing the most popular article authors...")
+        print("2. Who are the most popular article authors of all time?")
         for name, views in results:
             print("{} -- {} Views".format(name, views))
         print("")
@@ -58,8 +58,8 @@ class MyClass(object):
                        cast(z.total as float) > 0.01""")
         results = cursor.fetchall()
         conn.close()
-        print("Now printing dates where more than" +
-              " 1% of requests resulted with errors...")
+        print("3. On which days did more than 1% of requests" +
+              " lead to errors?")
         for time, error_percent in results:
             print("{} -- {} % Error".format(time, error_percent))
         print("")
